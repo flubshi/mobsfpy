@@ -46,7 +46,7 @@ class MobSF:
         post_dict = {'scan_type': scantype,
                      'file_name': filename,
                      'hash': scanhash,
-                     're_scan': rescan}
+                     're_scan': ('1' if rescan else '0') }
 
         headers = {'Authorization': self.__apikey}
 
